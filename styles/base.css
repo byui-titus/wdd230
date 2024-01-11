@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap");
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    margin: auto;
+    max-width: 800px;
+  }
+  main {
+    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    color: #004e98;
+    max-width: 800px;
+    margin: auto;
+  }
+  header {
+    display: grid;
+    margin: auto;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #413f75;
+  }
+  img{
+    max-width: 200px;
+  height: auto;
+  }
+  #menu {
+    margin: auto;
+    max-width: 800px;
+    list-style-type: none;
+    text-align: center;
+    background-color: #c0c0c0;
+    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+  }
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.open::before {
+    content: "🔙";
+  }
+  
+  nav {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: black;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+  }
+  nav a:hover {
+    background-color: #51dde7;
+  }
+  /* Mobile View ***************/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h2 {
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    margin: 1rem;
+    background-color: whitesmoke;
+  }
+  h3{
+    background-color: #413f75;
+    color: whitesmoke;
+    text-align: center;
+    height: auto;
+    border: solid;
+    height: 50px;
+    margin: auto;
+  }
+ .card-grid {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgb(134, 167, 238);
+    color: #fff;
+    margin: auto;
+    box-sizing: border-box;
+    border-style: inherit;
+   } 
+   ul{
+    margin-left: 10px;
+   }
+
+  .card-grid li a:hover {
+    background-color: #d2eeca;
+    color: #333;
+    font-weight: 200;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  h4{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  footer {
+    margin: auto;
+    background-color: #413f75;
+    max-width: 800px;
+    text-align: center;
+    height: 100px;
+  }
+  
+
+  
