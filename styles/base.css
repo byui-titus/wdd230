@@ -3,7 +3,7 @@
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: whitesmoke;
+    color: rgb(222, 60, 60);
     margin: auto;
     max-width: 800px;
   }
@@ -24,25 +24,23 @@ h1 {
     max-width: 200px;
   height: auto;
   }
+  #cards{
+  border: #333;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  
+  }
   #menu {
     margin: auto;
     max-width: 800px;
     list-style-type: none;
     text-align: center;
-    background-color: #c0c0c0;
     font-family: "Cantarell", Arial, Helvetica, sans-serif;
     font-size: larger;
     text-decoration: none;
     display: block;
+    background-color: black;
   }
-  #menu::before {
-    content: "☰";
-  }
-  
-  #menu.open::before {
-    content: "🔙";
-  }
-  
   nav {
     margin-bottom: 20px;
     text-align: center;
@@ -59,7 +57,7 @@ h1 {
   nav a:hover {
     background-color: #51dde7;
   }
-  /* Mobile View ***************/
+  /* Mobile */
   * {
     margin: 0;
     padding: 0;
@@ -85,37 +83,56 @@ h1 {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: rgb(134, 167, 238);
+    background-color:#e3d9d9;
     color: #fff;
     margin: auto;
-    box-sizing: border-box;
-    border-style: inherit;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: -3px;
+    box-shadow: #131010;
    } 
    ul{
     margin-left: 10px;
+    color: blue;
    }
-
+   li{
+    color: black;
+    padding: 10px;
+   }
+   li a{
+    color: blue;
+    padding: 10px;
+   }
   .card-grid li a:hover {
     background-color: #d2eeca;
-    color: #333;
     font-weight: 200;
     box-sizing: border-box;
     border-radius: 30px;
   }
+  #card{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color:#e3d9d9;
+    pad: 10px;
+  }
 
   h4{
     text-align: center;
+    padding: 10px;
   }
   p{
     text-align: center;
+    padding: 10px;
   }
   footer {
     margin: auto;
     background-color: #413f75;
     max-width: 800px;
     text-align: center;
-    height: 100px;
+    height: 200px;
   }
   
+
 
   
