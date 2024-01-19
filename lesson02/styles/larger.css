@@ -1,10 +1,9 @@
-@media (min-width: 600px) {
+@media screen and (min-width: 1024px) {
     header{
         margin:auto;
         width: 7900px;
         background-color: #413f75;
-    }
-    
+    }   
     .sites{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -33,4 +32,5 @@
         margin:0 auto;
         text-align: center;
     }
+    
 }

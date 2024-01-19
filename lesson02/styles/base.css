@@ -10,22 +10,24 @@
 header{
     margin:auto;
     max-width: 800px;
-    background-color: #7a77d3;
+    background-color: #413f75;
 }
 main{
-    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;;
     color: #000000;
     max-width: 800px;
     margin: auto;
 }
-.sites{
+#sites{
     margin: auto;
     max-width: 800px;
     list-style-type: none;
     text-align: center;
-    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: larger;
     text-decoration: none;
+    display: block;
+    background-color: black;
 }
 /*#cards{
     background-color: #fafafa;
@@ -35,9 +37,9 @@ main{
 h2{
     text-align: left;
     max-width: 800px;
-    background-color: #7a77d3;
+    background-color: #413f75;
     padding: 10px;
-    
+    background-color: #413f75;
 }
 /* Mobile */
 .site-lay1{
@@ -53,7 +55,7 @@ h4, nav{
     
 }
 .app{
-    width: 350px;
+    width: 300px;
     margin:0 auto;
     text-align: center;
 }
@@ -74,9 +76,9 @@ h4, nav{
     background-color: aliceblue;
 }
 footer{
-    background-color: #7a77d3;
+    background-color: #413f75;
     color: white;
     text-align: center;
     max-width: 800px;
-    margin: auto;
 }
+  
