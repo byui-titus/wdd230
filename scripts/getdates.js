@@ -1,6 +1,17 @@
 let oLastModif = new Date(document.lastModified);
 document.querySelector("#lastModified").textContent = oLastModif;
 
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerBtn = document.getElementById('menu');
+    const mainMenu = document.querySelector('.navigation');
+
+    hamburgerBtn.addEventListener('click', function () {
+        mainMenu.style.display = 
+        (mainMenu.style.display === 'none' || mainMenu.style.display === 'block') ? 
+        '' : 'block';
+    });
+});
+
 const options = {
     year: "numeric"
 };
