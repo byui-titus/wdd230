@@ -23,7 +23,7 @@ h1 {
   }
   img{
     max-width: 200px;
-  height: auto;
+    height: auto;
   }
   #cards{
   border: #333;
