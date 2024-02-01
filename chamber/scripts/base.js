@@ -1,3 +1,23 @@
+let oLastModif = new Date(document.lastModified);
+document.querySelector("#lastModified").textContent = oLastModif;
+
+const options = {
+  year: "numeric"
+};
+document.querySelector("#yearDate").innerHTML =  new Date().toLocaleDateString("en-US", options);
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburgerBtn = document.getElementById('menu');
+  const mainMenu = document.querySelector('.navigation');
+
+  hamburgerBtn.addEventListener('click', function () {
+      mainMenu.style.display = 
+      (mainMenu.style.display === 'none' || mainMenu.style.display === 'block') ? 
+      '' : 'block';
+  });
+});
+
+
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#fig1");
@@ -103,3 +123,4 @@ function forecastdates() {
 weatherapiFetch();
 forecastapiFetch();
 forecastdates();
+

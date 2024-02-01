@@ -1,0 +1,12 @@
+@media screen and (min-width: 1024px) {
+    body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        background: linear-gradient(0deg,#aea4e3 0%, 
+        #d3ffe8 50%,#d0a0eb 100%);
+    }
+
+}

@@ -30,7 +30,7 @@ header img{
 
 }
 header h1{
-    font-family: 'Merriweather', serif;  
+    font-family: 'Merriweather', sans-serif;  
     margin-right: auto;
     font-size: 1rem;
     
@@ -116,11 +116,8 @@ nav li a{
     height: 50px;
     width: 50px;
 }
-#spotlight-grid {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    display: flex;
-}
+
+
 #wather-card{
     background-color: whitesmoke;
     max-width: 800px;
@@ -131,7 +128,7 @@ nav li a{
 }
 #wather-card  h4{
     max-width: 800px;
-    font-style: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
     color:#d71fdd; 
 }
 
@@ -140,9 +137,15 @@ nav li a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-#spotlight1{
-    max-width: 800px;
+.spot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
     margin: auto;
+    grid-gap: 10px;
+}
+#spotlight1{
+    max-width: 600px;
     border: #21374f;
     box-sizing: border-box;
     background-color: #ca9696;
@@ -150,8 +153,7 @@ nav li a{
     padding: 10px;
 }
 #spotliht2{
-    max-width: 800px;
-    margin: auto;
+    max-width: 400px;
     border: #21374f;
     box-sizing: border-box;
     background-color: #ca9696;
@@ -162,7 +164,7 @@ nav li a{
 }
 
 #spotlight3{
-    max-width: 800px;
+    max-width: 400px;
     margin: auto;
     border: #21374f;
     box-sizing: border-box;
@@ -172,7 +174,7 @@ nav li a{
     margin-top: 10px;
 }
 footer{
-    max-width: 800px;
+    max-width: 1000px;
     background-color: #b68d55;
     margin: auto;
     border-radius: 20px;
@@ -191,4 +193,157 @@ footer{
     font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 600px){
+    header h1{
+        font-family: 'Merriweather', serif;  
+        margin-right: auto;
+        font-size: 1.5rem;        
+        color: rgb(34, 46, 202);
+    }
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: blue;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+      }
+    #menu::before {
+        content: "☰";
+      }
+      
+      #menu.open::before {
+        content: "🔙";
+      }
+    .navigation {
+        display: none; 
+        flex-direction: row;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 50%;
+        background-color: rgb(172, 130, 211) ;
+        padding: 10px;
+        color: #e76f51;
+      }
+    .nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        
+      }
+    .navigation li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+
+      }
+    .navigation li a:hover {
+        background-color: #eb9898;
+        color: #271f1f;
+        font-weight: 700;
+      }
+      .open li {
+        display: block;
+        width: 100%;
+      }
+      .open li a {
+        display: block;
+      }
+      
+      .active::before {
+        content: "📍 ";
+    }
+    #hero-img{
+        text-align: center;
+        width:50px;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: -50px;
+        
+    }
+    .join {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        padding: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: black;
+        background-color:#bbb;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        text-decoration: none;
+    } 
+    #current-events{
+        background-color: whitesmoke;
+
+    }
+    #event-icon{
+        max-width: 300px;
+        height: auto;
+        left: 120px;
+    }  
+    #current-events h2, h4, p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #21374f;
+        
+    }  
+    #current-events h2{
+        margin-top: 200px;
+    }
+    #contact{
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #contact img{
+        max-width: 200px;
+        text-align: center;
+        margin: auto;
+    }
+    .spot{
+        display: block;
+        max-width: 600px;
+    }
+
+    #spotlight1{
+        max-width: 800px;
+        margin: auto;
+        border: #21374f;
+        box-sizing: border-box;
+        background-color: #ca9696;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    #spotliht2{
+        max-width: 800px;
+        margin: auto;
+        border: #21374f;
+        box-sizing: border-box;
+        background-color: #ca9696;
+        border-radius: 50px;
+        padding: 30px;
+        margin-top: 10px;
+    
+    }
+    
+    #spotlight3{
+        max-width: 800px;
+        margin: auto;
+        border: #21374f;
+        box-sizing: border-box;
+        background-color: #ca9696;
+        border-radius: 50px;
+        padding: 30px;
+        margin-top: 10px;
+    }
+    
+    
+}
 
