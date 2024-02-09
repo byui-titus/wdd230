@@ -16,6 +16,14 @@ body {
     background: linear-gradient(0deg,#aea4e3 0%, 
     #d3ffe8 50%,#b172d3 100%);
 }
+#mode {
+	position: absolute;
+	top: 4rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
 header {
     display: grid;
     margin: auto;
