@@ -36,9 +36,18 @@
     
     </nav>
     <Main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <div class="manue">
-            
+        <div class="hero">
+            <picture>
+                <!-- Image for mobile view (up to 400px width) -->
+                <source media="(max-width: 400px)" srcset="images/anchorage_temple_lds.webp">
+                <!-- Image for larger views (up to 960px width) -->
+                <source media="(min-width: 401px)" srcset="images/anchorage_temple_lds.webp">+
+                <img src="images/anchorage_temple_lds.webp" alt="Latter-day Temple">
+            </picture>
+            <div class="herolabel">
+                <p>Belo Horizonte Brazil Temple</p>
+            </div>
+        </div>
             <section id="cards">
                 <h3>Learning activities:</h3>
                 <ul class="card-grid">
