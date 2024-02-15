@@ -63,6 +63,7 @@
 
         <section id="wather-card">
             <h2> Weather Infromation</h2>
+            
             <h4>Wakiso, Uganda</h4>
             <div class="weather">
                 <h4>Toady</h4>
@@ -70,7 +71,13 @@
                 <figure>
                     <img id="weather-icon" alt="weather icon">
                     <figcaption id="fig1" class="weather-fig-captions"></figcaption>
-                </figure>                     
+                </figure>  
+                
+                <h4>Temperature, Windspeed and Windchiil</h4>
+               <P>Temperature: <span id="temperature">50</span>°F</P>
+               <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+               <p>Wind Chill: <span id="windchill">N/A</span>°F</p>
+            </div>
             </div>
             <h4>Forcast 3 days</h4>
             <section class="weath" id="weather-forecast">
@@ -144,5 +151,6 @@
     </footer>
 
     <script src="scripts/base.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
