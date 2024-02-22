@@ -8,5 +8,14 @@
         background: linear-gradient(0deg,#aea4e3 0%, 
         #d3ffe8 50%,#d0a0eb 100%);
     }
+    .discover{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        text-align: center;
+        margin: auto;
+        grid-gap: 20px;
+        justify-content: center;
+        max-width: 1000px;
+    }
 
 }

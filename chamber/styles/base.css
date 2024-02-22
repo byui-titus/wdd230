@@ -375,7 +375,70 @@ footer{
         padding: 30px;
         margin-top: 10px;
     }
+    .discover{
+        display: block;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+    }
+    .pictures{
+        margin: 0 auto;
+        grid-auto-rows: 300px;
+        justify-content: center;
+        grid-row-gap: 40px;
+        padding: 10px;
+        margin-bottom: auto;
+        padding: 0px;
+    }
     
     
 }
+/** discover styless**/
+.discover{
+    text-align: center;
+    margin: auto;
+    grid-gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+}
+.pictures{
+      
+    padding: 0px;
+}
+.monitory h2{
+    border: 1px solid balck;
+    margin: auto;
+    box-shadow: 1px 1px 3px 1px #333;
+}
+.pictures img{
+    border: 1px solid balck;
+    margin: auto;
+    box-shadow: 1px 1px 3px 1px #333;
+}
+.pictures :hover{
+    background-color: #decdcd;
+    color: #271f1f;
+    font-weight: 700;
+}
+.picture picture{
+    height: 100%;
+}
+.description{
+    margin-top: 0;
+    font-size: .8rem;
+}
+.pictures figcaption {
+    background-color: #FFECD1;
+    border: thin silver solid;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+   }
+.lastVisitP{
+    color: #b68d55;
+}
+@media only screen and (max-width: 300px) {
+    
+}
+
 
