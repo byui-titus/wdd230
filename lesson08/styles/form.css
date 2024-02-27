@@ -13,11 +13,16 @@ body {
     grid-template-columns: 1fr 1fr;
     background-color: #413f75;
   }
+  img{
+    max-width: 200px;
+    height: auto;
+  }
 
   footer{
     display: flex;
     align-items: center;
     height: 100px;
+    margin: auto;
   }   
   
   form {
