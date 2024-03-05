@@ -1,0 +1,45 @@
+{
+    "wardInformation": {
+    "familyName": "Sam",
+    "moveInDate": "2022-03-15",
+    "numberOfPeople": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "John Sam",
+        "gender": "Male",
+        "birthdate": "1996-05-20"
+      },
+      {
+        "name": "Jane Sam",
+        "gender": "Female",
+        "birthdate": "1998-11-12"
+      },
+      {
+        "name": "David Sam",
+        "gender": "Male",
+        "birthdate": "2000-02-03"
+      },
+      {
+        "name": "Emily Sam",
+        "gender": "Female",
+        "birthdate": "2002-08-27"
+      },
+      {
+        "name": "Michael Sam",
+        "gender": "Male",
+        "birthdate": "2004-04-10"
+      },
+      {
+        "name": "Sophia Sam",
+        "gender": "Female",
+        "birthdate": "2006-09-18"
+      },
+      {
+        "name": "Elijah Sam",
+        "gender": "Male",
+        "birthdate": "2008-12-05"
+      }
+    ]
+    }
+  }
