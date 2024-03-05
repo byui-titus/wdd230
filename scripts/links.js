@@ -1,27 +1,46 @@
 const baseURL = "https://byui-titus.github.io/wdd230/";
 const linksURL = "https://byui-titus.github.io/wdd230/data/links.json";
-const cards = document.querySelector("#cards");
+
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data);
+  try {
+      const response = await fetch(linksURL);
+      const data = await response.json();
+      console.log(data); // Test JSON data
+      displayLinks(data); // Call function to display links
+  } catch (error) {
+      console.error('Error fetching links data:', error);
   }
+}
 
-  const displayLinks = (weeks) => {
-  weeks.foreach((week) => {
-    let card = document.createElement("section");
-    let week = document.createElement("p");
-    let activity = document.createElement("a");
+// Function to display activity links
+function displayLinks(weeks) {
+  const linksContainer = document.getElementById('#cards');
 
-    week.textcontent = `${week.lesson}`;
-    activity.setAttribute("href", week.url);
-    activity.setAttribute("");
+  // Clear existing content
+  linksContainer.innerHTML = '';
+ // Loop through weeks
+  weeks.forEach(week => {
+      const weekHeading = document.createElement('h3');
+      weekHeading.textContent = `Week ${week.lesson}`;
 
-    card.appendChild(week);
-    card.appendChild(activity);
+      const linksList = document.createElement('ul');
 
-    cards.appendChild(card);
+      // Loop through links
+      week.links.forEach(link => {
+          const listItem = document.createElement('li');
+          const linkAnchor = document.createElement('a');
+          linkAnchor.href = baseURL + link.url;
+          linkAnchor.textContent = link.title;
+          listItem.appendChild(linkAnchor);
+          linksList.appendChild(listItem);
+      });
+
+      // Append week heading and links list to container
+      linksContainer.appendChild(weekHeading);
+      linksContainer.appendChild(linksList);
   });
-};
-getLinks();
+}
+
+// Call getLinks function to start fetching and displaying links
+getLinks()
