@@ -1,62 +1,55 @@
-const url1 = "data/data.json";
-const cards = document.querySelector("#cards");
+const requestURL = 'data/data.json';
 
-async function getBusinessesData() {
-  const response = await fetch(url1);
-  const data = await response.json();
-  displayBusinesses(data.businesses);
-}
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) { 
+    const businesses = jsonObject['businesses'];
+    businesses.forEach(displayBusinesses);
+  });
 
-getBusinessesData();
-const displayBusinesses = (businesses) => {
-  businesses.forEach((business) => {
-    let card = document.createElement("section");
-    let bName = document.createElement("h2");
-    let imageurl = document.createElement("img");
-    let location = document.createElement("p");
-    let contact = document.createElement("p");
-    let companyurl = document.createElement("a");
-    let membership = document.createElement("h4");
 
-    imageurl.setAttribute("src", business.imageurl);
-    imageurl.setAttribute("alt", `Logo of ${business.name}`);
-    imageurl.setAttribute("loading", "lazy");
-    imageurl.setAttribute("width", "auto");
-    imageurl.setAttribute("height", "auto");
+  function displayBusinesses(business) {
+    let card = document.createElement('section');
+    let imageurl = document.createElement('img');
+    let name= document.createElement('h2');
+    let location = document.createElement('p');
+    let contact = document.createElement('p');
+    let membership = document.createElement('p');
+    let companyurl = document.createElement('a');
+  
+    imageurl.setAttribute('src', business.imageurl);
+    imageurl.setAttribute('alt', `Icon image for ${business.name}`);
+    imageurl.setAttribute('loading', 'lazy');
 
-    bName.textContent = `${business.name}`;
-    location.textContent = `${business.location}`;
-    contact.textContent = `${business.contact}`;
-    membership.textContent = `${business.membership} Membership`;
-    companyurl.setAttribute("href", `${business.companyurl}`);
+    name.textContent = `${business.name}`;
+  
+    location.innerHTML = business.location;
+
+    contact.textContent = business.contact;
+
+    membership.textContent = business.membership;
+
     companyurl.textContent = business.companyurl;
-    companyurl.setAttribute("target", "_blank");
-
+    companyurl.setAttribute('href', '#'); 
+  
     card.appendChild(imageurl);
-    card.appendChild(bName);
+    card.appendChild(name);
     card.appendChild(location);
     card.appendChild(contact);
     card.appendChild(membership);
     card.appendChild(companyurl);
-
-    cards.appendChild(card);
-  });
-};
-getBusinessesData();
+  
+    document.querySelector('.directory-grid').appendChild(card);
+  }
 
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+  const directory = document.querySelector('.directory-grid')
+  const dirpanelbutton = document.querySelector('#panel');
+  const dirlistbutton = document.querySelector('#list');
 
-gridbutton.addEventListener("click", () => {
-  display.classList.add("grid-directory");
-  display.classList.remove("list-directory");
-});
 
-listbutton.addEventListener("click", showList);
+  dirpanelbutton.addEventListener('click', () => {directory.classList.add('panelview')}, false);
+  dirlistbutton.addEventListener('click', () => {directory.classList.remove('panelview')}, false);
 
-function showList() {
-  display.classList.add("list-directory");
-  display.classList.remove("grid-directory");
-}
