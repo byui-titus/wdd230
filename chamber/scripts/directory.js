@@ -11,7 +11,7 @@ getBusinessesData();
 const displayBusinesses = (businesses) => {
   businesses.forEach((business) => {
     let card = document.createElement("section");
-    let name = document.createElement("h2");
+    let bName = document.createElement("h2");
     let imageurl = document.createElement("img");
     let location = document.createElement("p");
     let contact = document.createElement("p");
@@ -24,7 +24,7 @@ const displayBusinesses = (businesses) => {
     imageurl.setAttribute("width", "auto");
     imageurl.setAttribute("height", "auto");
 
-    name.textContent = `${business.name}`;
+    bName.textContent = `${business.name}`;
     location.textContent = `${business.location}`;
     contact.textContent = `${business.contact}`;
     membership.textContent = `${business.membership} Membership`;
@@ -33,7 +33,7 @@ const displayBusinesses = (businesses) => {
     companyurl.setAttribute("target", "_blank");
 
     card.appendChild(imageurl);
-    card.appendChild(name);
+    card.appendChild(bName);
     card.appendChild(location);
     card.appendChild(contact);
     card.appendChild(membership);
@@ -42,7 +42,7 @@ const displayBusinesses = (businesses) => {
     cards.appendChild(card);
   });
 };
-
+getBusinessesData();
 
 
 const gridbutton = document.querySelector("#grid");
