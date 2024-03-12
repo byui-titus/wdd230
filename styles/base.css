@@ -220,6 +220,11 @@ h1 {
     background-color:#e3d9d9;
     padding: 10px;
   }
+  figure{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+  }
 
   h4{
     text-align: center;
@@ -228,6 +233,9 @@ h1 {
   p{
     text-align: center;
     padding: 10px;
+  }
+  P span{
+    color: #e76f51;
   }
 
   .google-map {

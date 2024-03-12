@@ -29,3 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let str = h3.innerText.slice(0, index + 1).concat(`${date.getFullYear()}`);
    h3.innerText = str.concat(h3.innerText.slice(index + 1));
 });
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
