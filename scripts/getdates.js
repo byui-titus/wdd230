@@ -1,22 +1,31 @@
-//document.addEventListener("DOMContentLoaded", () => {
-    // Get the last modified date
- //   let lastModified = document.lastModified;
+// 1️⃣ Initialize display element variable
+const visitsDisplay = document.querySelector(".visits");
+// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. 
+//If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
-    // Get the h4 to set the string
- //   let h4 = document.querySelector("footer h4");
+// 3️ Determine if this is the first visit or display the number of visits. 
+//We wrote this example backwards in order for you to think deeply about the logic.
+if (numVisits !== 0) {
+  visitsDisplay.textContent = numVisits;
+} else {
+  visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
 
-    // Set h4 inner text with date
- //   h4.innerText = h4.innerText.concat(` ${lastModified}`);
+// 4️ increment the number of visits by one.
+numVisits++;
 
-    // Get current date
- //   let date = new Date();
-//
-    // Get h3 to place the current year
-//    let h3 = document.querySelector("footer h3");
+//store the new visit total into localStorage, key=numVisits-ls
+localStorage.setItem("numVisits-ls", numVisits);
 
-    // Get string before © and add current year
- //   let str = h3.innerText.slice(0, index + 1).concat(`${date.getFullYear()}`);
-//
-    // Add the rest of the string
-//    h3.innerText = str.concat(h3.innerText.slice(index + 1));
-//});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let lastModified = document.lastModified;
+   let h4 = document.querySelector("footer h4");
+    h4.innerText = h4.innerText.concat(` ${lastModified}`);
+    let date = new Date();
+    let h3 = document.querySelector("footer h3");
+    let str = h3.innerText.slice(0, index + 1).concat(`${date.getFullYear()}`);
+   h3.innerText = str.concat(h3.innerText.slice(index + 1));
+});
