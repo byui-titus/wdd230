@@ -15,3 +15,17 @@ window.onload = function() {
     const windChillValue = calculateWindchill(temperature, windspeed);
     document.getElementById('windchill').innerText = windChillValue;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var today = new Date();
+    var dayOfWeek = today.getDay(); // 0 (Sunday) through 6 (Saturday)
+
+    // Check if it's Monday, Tuesday, or Wednesday
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+        document.getElementById("chamberBanner").style.display = "block";
+    }
+});
+
+function closeBanner() {
+    document.getElementById("chamberBanner").style.display = "none";
+}
