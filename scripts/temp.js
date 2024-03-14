@@ -15,8 +15,9 @@ async function apiFetch() {
         } else {
             throw Error(await response.text());
         }
-    } catch{
-    } 
+    } catch (error) {
+        //console.log(error);
+    }
 }
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;

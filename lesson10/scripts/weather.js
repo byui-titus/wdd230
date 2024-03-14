@@ -17,7 +17,7 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 function displayResults(data) {
