@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of commerce</title>
+
+    <meta name="Author" content="SSEBUDE TITUS">
+    <meta name="description" content="WDD 230 - Web Frontend Development.">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>     
+        <div class="headname">
+            <img class="logo" src="images/logo.jpg" alt="Nansana Municipality Chamber of Commerce">
+            <div class="vanCC-name">Nansana Municipality<br>Chamber of Commerce</div>     
+         </div>
+         <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/Untitled1" alt="Facebook" class="sociallogo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/Untitled.png" alt="LinkedIn" class="sociallogo"></a>
+            </div>
+            <div>
+                <button id="hamburgerBtn"><span class="hamburger">&#9776;</span><span class="hamburger">X</span></button>
+            </div>
+        <div class="menu">
+            <nav>
+                <ul id="primaryNav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <div class="date-hdr">
+            <p id="datetime"><span id="todayHeading"></span></p>
+        </div>
+    </header>
+
+    
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source srcset="images/small.webp" media="(min-width:400px) and (max-width: 699px)">
+                <source srcset="images/larger.webp" media="(min-width: 800px)">
+                <img class="banner" src="images/larger.webp" alt="Nansana Municipality">
+            </picture>
+            <h1 class="hero-banner">Welcome to the Nansana Municipality<br>Chamber of Commerce</h1>
+            <form action="join.html"><button class="call-to-action" type="submit">Join the Chamber</button></form>
+        </div>
+
+        <div class="event">
+            <img src="images/race.png" alt="Race for the Homeless Event">
+            <p class="large">Mayor's Cup</p>
+            <p>Preparations for Mayor's Cup 2023 in high gear & on going is the formation of organizing sub 
+                committees from each of the 4 divisions of the Municipality from which a single committee 
+                will be formed.<br><a href="#">more info...</a></p>
+        </div>
+
+        <div class="weather">
+            <div id="weather-info">
+            </div>
+        </div>
+
+        <div class="news">
+            <p class="large">The Municipality </p>
+            <p><b>Nansana, MC</b> The Municipality attained this status under statutory instrument 2015 No. 47
+                 on 9th day of September 2015. The then existing Nansana Town Council was expanded in 
+                 boundaries to annex Nabweru , Gombe and Busukuma Sub-counties to form a new Local Council at 
+                 the Level of LCIV and thus took the Name of the existing Town Council, which is Nansana.
+
+                Nansana Municipality is located in Wakiso District within in the Central Region of Uganda. It 
+                is about 9.6km (6 miles) from the centre of Kampala, the capital City of Uganda on 
+                (Kampala-Hoima Road). It covers an area of 295.3 sq km.   </p></div>
+        <div class="join">
+            <form action="join.html"><button class="join-us" type="submit">Join Us!</button></form>
+            <p>Discover how to join the Chamber of Commerce and how it will benefit your 
+                organization. Together we can build a better Municipality.</p>
+        </div>
+
+        <aside class="aside">
+            <div class="spotlight" id="spotlight1">                
+                <section class="text-center spotlight">
+                    <img src="images/ecobank.jpg" alt="ecobank">
+                    <h2>Eco bank Uganda</h2>
+                    <p>Finance Instution</p>
+                    <p>Member sisnce: 2020</p>
+                    <h4>Bronze membership</h4>
+                    <a href="https://www.ecobank.com/ug/personal-banking/countries" target="_blank">https://www.ecobank.com/ug</a>
+        
+                </section>
+            </div>
+            
+            <div class="spotlight" id="spotlight2">  
+              <section class="text-center spotlight">
+                <img src="images/sozo.jpg"  alt="sozo">
+            <h2>Sozo property consultant Ltd</h2>
+            <p>household</p>
+            <p>Member sisnce: 2019</p>
+            <h4>Golod membership</h4> 
+              </section>
+            </div>
+            
+            
+            <div class="spotlight" id="spotlight3">
+              <section class="text-center spotlight">
+                <img src="images/airtel.jpg" alt="airtel log">
+            <h2>Airtel Uganda</h2>
+            <p>Telecom company</p>
+            <p>Member sisnce: 2015</p>
+            <h4>Silver membership</h4>
+            <a href="https://airtel.africa/" target="_blank">https://airtel.africa/</a>
+              </section>
+            </div>
+
+
+            
+        </aside>
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-footer" src="images/logo.jpg" alt="Nansana MunicipalityChamber of Commerce Logo" loading="lazy" width="150" height="110">
+                </div>
+                <div class="name-footer">
+                    <p class="medium">Nansana Municipality<br>Chamber of Commerce</p>
+                    <p>123 Main St.<br>Nansana Municipality</p>
+                </div>
+                <div class="contact">
+                    <p>titusrayz33@gmail.com</p>
+                    <p>+256-770-844432</p>
+                    <p><a href="https://www.google.com/maps/place/Vancouver,+WA/@45.6382281,-122.7013591,12z/data=!3m1!4b1!4m6!3m5!1s0x5495af63c85914f9:0x8456d5112c91e3f3!8m2!3d45.6280277!4d-122.673865!16zL20vMGNraGM" 
+                        target="_blank">📍 Location</a></p>
+                </div>
+                <div class="foot-hr"><hr></div>
+                <div class="otherinfo">  
+                        &copy;<span id="copyright"></span>  Nansana Municipality Chamber of Commerce&nbsp;&nbsp;|&nbsp;&nbsp;Ssebude Titus&nbsp;&nbsp;|&nbsp;&nbsp;WDD 230 Project&nbsp;&nbsp;|&nbsp;&nbsp;Last modification: <span id="dateModified"></span>
+                </div>            
+            </footer>
+
+    <script src="scripts/bass.js"></script>
+    <script src="scripts/forecas.js"></script>
+    <script src="scripts/windchil.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
