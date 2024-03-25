@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header id="header">
+        <img src="images/titus.jpg" alt="Titus" id="profile-picture"/>      
+        <h1>Ssebude Titus</h1>
+    </header>
+    <form action="record.html" method="get">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Password must be at least 8 characters long and alphanumeric" required>
+        </div>
+        <div>
+          <label for="confirm_password">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password" required oninput="checkPassword(this)">
+          <span id="password_error" style="display: none; color: red;">Passwords do not match. Please try again.</span>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+        </div>
+        <div>
+          <label for="page_rating">Page Rating:</label>
+          <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" onchange="document.getElementById('rating_display').textContent = this.value;">
+          <span id="rating_display">1</span>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <footer>
+        <p>&copy; <span id="yearDate"></span> </p>
+        <p>Ssebude Titus</p>
+        <p>Kampala, Uganda </p>
+        <h4> lastModified;</h4>
+        <div id="lastModified"></div>
+    </footer>
+
+
+      <script src="scripts/form.js"></script>
+</body>
+</html>

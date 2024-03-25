@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg,#aea4e3 0%, 
+    #d3ffe8 50%,#b172d3 100%);
+    margin: 0;
+    padding: 20px;
+  }
+
+  header {
+    display: grid;
+    margin: auto;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #413f75;
+  }
+  img{
+    max-width: 200px;
+    height: auto;
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+  }   
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e4c7e7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="range"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="range"] {
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #error_message {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  .thankyou-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thankyou-main div {
+    margin: 7rem 2rem 7rem 2rem;
+}

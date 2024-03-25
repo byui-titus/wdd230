@@ -1,3 +1,4 @@
+
 let oLastModif = new Date(document.lastModified);
 document.querySelector("#lastModified").textContent = oLastModif;
 
@@ -53,8 +54,8 @@ const weatherIcon3 = document.querySelector("#weather-icon3");
 const captionDesc3 = document.querySelector("#fig4");
 const forecastday3 = document.querySelector("#forecast-day-3");
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=25.66&lon=-100.29&appid=82b9407b7b6d113e077d354c4b29fe74&units=metric`;
-const url1 = `https://api.openweathermap.org/data/2.5/forecast?lat=25.66&lon=-100.29&appid=82b9407b7b6d113e077d354c4b29fe74&units=metric`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=0.4004382776169058&lon=32.47878626329907&appid=0782fecc58388e8fce1d91ab43807e18&units=metric`;
+const url1 = `https://api.openweathermap.org/data/2.5/forecast?lat=0.4004382776169058&lon=32.47878626329907&appid=0782fecc58388e8fce1d91ab43807e18&units=metric`;
 
 async function weatherapiFetch() {
   try {

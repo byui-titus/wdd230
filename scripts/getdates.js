@@ -1,62 +1,39 @@
-let oLastModif = new Date(document.lastModified);
-document.querySelector("#lastModified").textContent = oLastModif;
-
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerBtn = document.getElementById('menu');
-    const mainMenu = document.querySelector('.navigation');
-
-    hamburgerBtn.addEventListener('click', function () {
-        mainMenu.style.display = 
-        (mainMenu.style.display === 'none' || mainMenu.style.display === 'block') ? 
-        '' : 'block';
-    });
-});
-
-const options = {
-    year: "numeric"
-};
-document.querySelector("#yearDate").innerHTML =  new Date().toLocaleDateString("en-US", options);
-
+// 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");
+// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. 
+//If the numVisits KEY is missing, then assign 0 to the numVisits variable.
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+// 3️ Determine if this is the first visit or display the number of visits. 
+//We wrote this example backwards in order for you to think deeply about the logic.
 if (numVisits !== 0) {
   visitsDisplay.textContent = numVisits;
 } else {
   visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
+
+// 4️ increment the number of visits by one.
 numVisits++;
+
+//store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
 
 
-const currentTemp = document.querySelector("#current-temp");
-currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=25.68&lon=-100.32&appid=82b9407b7b6d113e077d354c4b29fe74&units=imperial`;
+document.addEventListener("DOMContentLoaded", () => {
+    let lastModified = document.lastModified;
+   let h4 = document.querySelector("footer h4");
+    h4.innerText = h4.innerText.concat(` ${lastModified}`);
+    let date = new Date();
+    let h3 = document.querySelector("footer h3");
+    let str = h3.innerText.slice(0, index + 1).concat(`${date.getFullYear()}`);
+   h3.innerText = str.concat(h3.innerText.slice(index + 1));
+});
 
-async function apiFetch(){
-    try{
-        const response = await fetch(url);
-        if(response.ok){
-            const data = await response.json();
-            console.log(data); //Testing only
-            displayResults(data); // uncomment when ready
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error)
-    }
-}
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-function displayResults(data) {
-    
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute("src",iconsrc);
-    weatherIcon.setAttribute("alt","weather icon");
-    captionDesc.textContent =`${desc}`;
-}
-
-apiFetch();
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
