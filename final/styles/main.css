@@ -1,0 +1,633 @@
+
+
+:root {
+  --primary-color: #69bdd6;
+  --secondary-color: #606c38;
+  --accent1-color: #bc6c25;
+  --accent2-color: #dda15e;
+
+  --heading-font: "Open Sans", Arial, Helvetica, sans-serif;
+  --paragraph-font: Arial, Helvetica, sans-serif;
+
+  --headline-color-on-white: #000; /* headlines on a white background */
+  --headline-color-on-color: #fff; /* headlines on a colored background */
+  --paragraph-color-on-white: #000; /* paragraph text on a white background */
+  --paragraph-color-on-color: #fff; /* paragraph text on a colored background */
+  --paragraph-background-color: #283618;
+  --nav-link-color: #fff;
+  --nav-background-color: #606c38;
+  --nav-hover-link-color: #fff;
+  --nav-hover-background-color: #bc6c25;
+}
+
+.home{
+  text-align: center;
+  margin: auto;
+}
+.sociallogo {
+    width: 48px;
+    margin: 5px;
+  }
+
+  #chamberBanner {
+    padding: 20px;
+  }
+
+  .social{
+    text-align: right;
+    margin: auto;
+    margin-top: -80px;
+  }
+  body{
+    background-color: #7eb9ab;
+   }
+
+  .hero {
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .hero picture {
+    display: inline-block;
+  }
+  
+  .hero .logo {
+    position: absolute;
+    margin: 0;
+    top: 10%;
+    left: 5%;
+    width: 50%;
+  }
+
+  .hero a {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    background-color: rgba(46, 80, 119, 0.6);
+    color: #fff;
+  }
+  
+  .hero img, .hero picture {
+    width: 100%;
+  }
+
+  .btn {
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn:hover {
+    -webkit-transform: translate(0, -2px);
+            transform: translate(0, -2px);
+    -webkit-box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.8);
+  }
+  
+  .btn:hover::after {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+
+  .navigation {
+    display: flex;
+    list-style: none;
+    padding:  50px;
+    text-align: center;
+    margin: auto;
+    margin-left: 500px;
+    margin-top: -90px;
+    margin-bottom: 50px;
+  }
+
+  nav li a{
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+
+}
+
+  
+  .navigation li:first-child {
+    display: block;
+  }
+  
+
+  .navigation li a {
+    display: block;
+    padding: .8rem 2%;
+    text-align: center;
+    text-decoration: none;
+    color: #444a57;
+    font-weight: 700;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .appear li {
+    display: block;
+
+
+  }
+  
+  .active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .type-rentals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #444a57;
+  }
+  
+  .type-rentals h2 {
+    margin-bottom: 0;
+    -webkit-text-decoration: underline #24D000;
+            text-decoration: underline #24D000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .type-rentals div {
+    border: 1px solid #2E5077;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  
+  .type-rentals div img {
+    width: 100%;
+    border-radius: .5rem;
+  }
+  
+  .type-rentals div h3 {
+    margin-bottom: 0;
+  }
+  
+  .list {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list li {
+    line-height: 1.5;
+    margin-bottom: .4rem;
+  }
+  
+  .list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .list li::before {
+    content: "•";
+    color: #24D000;
+    display: inline-block;
+    width: .7rem;
+    margin: 0 .3rem 0 .5em;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+
+
+  .h2{
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+
+  .tours{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    border: 1px solid #ec2456;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    box-sizing: border-box;
+  }
+
+  .tr{
+    border: 1px solid #e61313;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-bottom: .5rem;
+  }
+
+
+  
+  .weather {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #444a57;
+  }
+  
+  .weather h2 {
+    margin-bottom: 0;
+    -webkit-text-decoration: underline #24D000;
+            text-decoration: underline #24D000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .weather div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem;
+    background-color: rgba(46, 80, 119, 0.3);
+    border-radius: .5rem;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .weather div img {
+    width: 40%;
+  }
+  
+  .weather div div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 70%;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    line-height: 1;
+  }
+  
+  .weather div div p {
+    margin: .5rem 0;
+  }
+  
+  .weather table {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+    max-width: 100%;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .weather table tr {
+    margin: 2rem;
+  }
+
+  .contact h2 {
+    text-align: center;
+    -webkit-text-decoration: underline #24D000;
+            text-decoration: underline #24D000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  
+  .contact ul {
+    list-style: none;
+    line-height: 1.7;
+    margin-bottom: 0;
+    padding-left: 5%;
+  }
+  
+  .contact ul li {
+    margin-bottom: .7rem;
+  }
+  
+  .contact ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact ul a {
+    text-decoration: none;
+    color: #444a57;
+  }
+  
+  .contact ul .fa {
+    color: #24D000;
+  }
+  
+  .contact .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 5rem;
+    margin-top: 0;
+  }
+  
+  .contact .social-list li {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .contact .social-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: rgba(46, 80, 119, 0.3);
+  }
+  
+  footer ul {
+    display: flex;
+    list-style: none;
+    line-height: 1.7;
+    padding-left: 0;
+    
+  }
+  
+  footer a {
+    color: #24D000;
+    -webkit-text-decoration-color: #2E5077;
+            text-decoration-color: #2E5077;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+  }
+  
+  footer p:first-child {
+    padding-top: 1rem;
+  }
+  
+  footer p:last-child {
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 550px) {
+
+    .home{
+      text-align: center;
+      margin: auto;
+    }
+    
+    .navigation {
+      list-style: none;
+      padding: 10px;
+      margin: auto;
+      text-align: center;
+    
+      li:first-child {
+        display: block;
+        margin: auto;
+        text-align: center;
+        list-style: none;
+      }
+    
+      li {
+        display: none;
+    
+        a {
+          display: block;
+          list-style: none;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          font-weight: 700;
+          border-top: 1px solid rgba(0, 0, 0, .1);
+          margin: auto;
+          background-color: #24D000;
+        }
+      }
+    
+    }
+    
+    .appear li {
+      display: block;
+    }
+    
+    .active {
+      background-color: rgba(0, 0, 0, .2);
+    }
+    
+
+    .weather div {
+      width: 30rem;
+    }
+    .weather div div {
+      width: 15%;
+    }
+    .weather table th {
+      font-size: 1.5rem;
+      padding: .5rem;
+    }
+    .weather table td {
+      font-size: 1rem;
+    }
+
+    .tours{
+      display: grid;
+      grid-template-columns:1fr;
+      grid-gap: 10px;
+      border: 1px solid #ec2456;
+      border-radius: .5rem;
+      padding: .5rem;
+      margin-bottom: .5rem;
+      box-sizing: border-box;
+    }
+  
+    .tr{
+      border: 1px solid #e61313;
+      border-radius: .5rem;
+      padding: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    footer ul {
+      display: block;
+      list-style: none;
+      line-height: 1.7;
+      padding-left: 0;
+    }
+
+    .contact iframe{
+      width: 400px;
+    }
+
+    .hamburger {
+      font-size: 45px;
+    }
+    
+  }
+
+
+  /******************* rentals *******************/
+  .rentals h2 {
+    text-align: center;
+    -webkit-text-decoration: underline #24D000;
+            text-decoration: underline #24D000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: .5rem;
+  }
+  
+  .rentals #rentalCards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .rentals #rentalCards div {
+    width: 90%;
+    border: 1px solid #2E5077;
+    border-radius: .5rem;
+    margin: .5rem auto;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .rentals #rentalCards div img {
+    width: 100%;
+  }
+  
+  .rentals #rentalCards div h3 {
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: .5rem;
+  }
+  
+  .rentals #rentalCards div p {
+    text-align: center;
+  }
+  
+  .rentals #rentalCards div ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .rentals #rentalCards div ul lh {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .rentals #rentalCards div ul li::before {
+    content: "$";
+    color: #24D000;
+    display: inline-block;
+    width: .5rem;
+    margin: 0 .3rem 0 .5em;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .rentals #rentalCards div .btn {
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    color: #24D000;
+    border: 1px solid #FFA630;
+    font-weight: 700;
+  }
+
+  /******************* reservation *******************/
+.reservation {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.reservation .list input[type=checkbox] {
+  width: 1rem;
+}
+
+.reservation form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reservation form input, .reservation form textarea, .reservation form select, .reservation form fieldset {
+  padding: .5rem;
+  border: 1px solid #24D000;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.reservation form label {
+  margin-bottom: .3rem;
+}
+
+.reservation form input:last-child {
+  color: white;
+  background-color: #24D000;
+}
+
+/******************* reservation *******************/
+.confirmation {
+  text-align: center;
+  border: solid 1px #24D000;
+  border-radius: .5rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 3px 3px 3px #888;
+          box-shadow: 3px 3px 3px #888;
+}
+
+.confirmation h2 {
+  -webkit-text-decoration: underline #24D000;
+          text-decoration: underline #24D000;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: .5rem;
+} 

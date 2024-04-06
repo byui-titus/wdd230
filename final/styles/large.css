@@ -1,0 +1,67 @@
+@media only screen and (min-width: 1023px){ 
+
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+
+   .type-rentals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    margin: auto;
+    }
+    .type-rentals div{ 
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .weather{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    }
+    .weather div{ 
+        width: 500px;
+      }
+
+      .contact{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin: auto;
+      }
+
+      .contact ul{
+        width:20px ;
+       }
+
+
+       /******************* rentals *******************/
+
+       .rentals #rentalCards {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 1.5rem; 
+      }
+
+      /******************* reservation *******************/
+  .reservation {
+    width: 45%;
+    text-align: left;
+    margin: auto;
+  }
+  
+  /******************* reservation *******************/
+  .confirmation {
+    width: 50%;
+    margin: 5rem auto;
+  }
+}

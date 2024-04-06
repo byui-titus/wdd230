@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    
+
+    <meta name="Author" content="SSEBUDE TITUS">
+    <meta name="description" content="WDD 230 - Web Frontend Development Final project">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/narmalise.css">
+
+
+
+</head>
+<body>
+    <div id="chamberBanner" class="banner">
+        <p></p>
+        
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook" class="sociallogo"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="LinkedIn" class="sociallogo"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
+    </div>
+
+    <header>     
+        <div class="headname">
+            <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
+        </div>
+
+
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a>
+            </li>
+            <li>
+              <a href="index.html" >Home</a>
+            </li>
+            <li>
+              <a href="rentals.html">Rentals</a>
+            </li>
+            <li>
+              <a href="reservations.html">Reservations</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+  
+
+        <div class="date-hdr">
+            <p id="datetime"><span id="todayHeading"></span></p>
+        </div>
+    </header>
+
+    <main class="home">
+        <div class="hero">
+            <picture>
+                <source srcset="images/helo.webp" media="(min-width:400px) and (max-width: 699px)">
+                <source srcset="images/helo-1.webp" media="(min-width: 800px)">
+                <img class="banner" src="images/helo-1.webp" alt="Hero image">
+            </picture>
+            <a class="btn" href="#">Make a Reservation</a>
+        </div>
+
+
+        <h2 class="rentlls">Type of Rentals</h2>
+        <section class="type-rentals">
+          <div>
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/honda pcx150 2person.jpg">
+                <source media="(min-width: 800px)" srcset="images/honda pcx150 2person.jpg">
+                <img src="images/honda pcx150 2person.jpg" alt="picture of Honda PCX150">
+              </picture>
+              <h3>Honda Motor Scooters</h3>
+              <ul class="list">
+                <li>Honda Metropolitan (49cc) - 1 person.</li>
+                <li>Honda Dio (110cc) - 2 person.</li>
+                <li>Honda PCX150 (149cc) - 2 person.</li>
+              </ul>
+          </div>
+
+            <div>
+                <picture>
+                  <source media="(max-width: 799px)" srcset="images/side by side atvs.jpg">
+                  <source media="(min-width: 800px)" srcset="images/side by side atvs.jpg">
+                  <img src="images/side by side atvs.jpg" alt="picture of Pioneer 1000">
+                </picture>
+                <h3>ATV Side-by-Side</h3>
+                <ul class="list">
+                  <li>Honda Pioneer 1000.</li>
+                </ul>
+            </div>
+
+            <div>
+                <picture>
+                  <source media="(max-width: 799px)" srcset="images/jeep.jpg">
+                  <source media="(min-width: 800px)" srcset="images/jeep.jpg">
+                  <img src="images/jeep.jpg" alt="picture of 4 door Jeep Wrangler">
+                </picture>
+                <h3>Jeep Rentals</h3>
+                <ul class="list">
+                  <li>4-door Jeep Wrangler - manual with A/C - 5 people max.</li>
+                  <li>2-door Jeep Wrangler - open air - manual - 4 people max.</li>
+                </ul>
+            </div>
+            
+            
+        </section>
+
+
+        <h2 class="weath">Weather in Cozumel</h2>
+        <section class="weather">
+            
+            <div>
+              <img src=" " alt="Icon of the current weather" id="iconWeather">
+              <div>
+                <p>Temperature: <span id="temp"></span>°F</p>
+                <p>Description: <span id="curr"></span></p>
+                <p>Humidity: <span id="hum"></span>%</p>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <th><span id="nameDay1"></span></th>
+                <th><span id="nameDay2"></span></th>
+                <th><span id="nameDay3"></span></th>
+                <th><span id="nameDay4"></span></th>
+                <th><span id="nameDay5"></span></th>
+              </tr>
+              <tr>
+                <td><img src=" " alt="image forecast" id="imgForecast2"></td>
+                <td><img src=" " alt="image forecast" id="imgForecast10"></td>
+                <td><img src=" " alt="image forecast" id="imgForecast18"></td>
+                <td><img src=" " alt="image forecast" id="imgForecast26"></td>
+                <td><img src=" " alt="image forecast" id="imgForecast34"></td>
+              </tr>
+              <tr>
+                <td><span id="tempForecast2"></span>°F</td>
+                <td><span id="tempForecast10"></span>°F</td>
+                <td><span id="tempForecast18"></span>°F</td>
+                <td><span id="tempForecast26"></span>°F</td>
+                <td><span id="tempForecast34"></span>°F</td>
+              </tr>
+            </table>
+        </section>
+
+        <h2 class="h2">Our Tours</h2>
+        <div class="tours">
+            <section id="tour1" class="tr">
+              <h3>Mr. Sanchos Beach Club All-Inclusive Day Pass</h3>
+              <img src="images/tour1.jpg"
+                data-src="images/tour1.jpg"
+                alt="photo of Punta Sur Beach">
+                <p>Enjoy great service and convenience that come with an all-inclusive day pass to Mr Sancho’s 
+                  Beach Club in Cozumel. Lounge on the beach or swing on a hammock. Make use of a pool bar and
+                   beachfront section exclusive to all-inclusive day pass guests. All-you-can-eat delicious meals
+                    and bottomless drinks await you, making this the perfect vacation experience.</p>
+            </section>
+
+            <section id="tour2" class="tr">
+              <h3>Cozumel Snorkeling Tour: Palancar, Columbia and El Cielo Reefs</h3>
+              <img src="images/tour2.jpg" data-src="images/tour2.jpg" alt="">
+                <p>Whether you're an experienced snorkeler or an absolute beginner, fully trained guides 
+                  let you make the most of Cozumel's famous reef on this half-day snorkeling tour. Hit three of
+                  the island's hottest snorkeling spots: Palancar Reef, Columbia Reef and Playa el Cielo, known
+                   for the starfish that decorate its white sands. Your package includes drinks and snorkeling
+                    gear; marine fees are payable in cash on the day.</p>
+            </section>
+
+            <section id="tour3" class="tr">
+              <h3>Paradise Beach Exclusive All-Inclusive Day Pass</h3>
+              <img src="images/tour3.jpg" data-src="images/tour3.jpg" alt="">
+                <p>This all-inclusive pass to Paradise Beach lets you hang out all day at one of Cozumel’s best 
+                  beach clubs. Lounge on chairs shaded by palm trees, grab lunch at an onsite restaurant or have 
+                  lunch served to you on the beach, and drink your fill of domestic liquors, beers, and soft
+                   drinks from the open bar. It’s the perfect beach day—no planning required.</p>
+            </section>       
+
+            <section id="tour4" class="tr">
+              <h3>The Cozumel Turtle Sanctuary Snorkel Tour</h3>
+              <img src="images/tour4.jpg" data-src="images/tour4.jpg" alt="">
+                <p>We're known for operating the best all-inclusive snorkel experiences on the island of Cozumel.
+                  Traveling to some of the most beautiful areas the Caribbean has to offer - including the famous
+                   'El Cielo'. We aim to visit 3 or 4 different destinations during the tour to give you a taste
+                    of what our beautiful island has to offer. We provide everything you need to enjoy the tour
+                     with us, including freshly prepared Mexican snacks and ice-cold drinks. Just turn up and 
+                     we'll take care of the rest! Note:Please arrive at least 40 minutes before your sailing 
+                     time. All times shown are for Cozumel’s local timezone, which may differ to your cruise 
+                     ship timezone. Check before booking.</p>
+            </section>
+
+            <section id="tour5" class="tr">
+              <h3>Private Jeep & ATV Tour to Jade Cavern Cenote</h3>
+              <img src="images/tour5.jpg" data-src="images/tour5.jpg"  alt="">
+                <p>Take our all new Private Jeep & ATV with a family tour operator that has been in business for 
+                  over 25 years. Not only do you get to snorkel, ride into the Jungle on an ATV to discover Jade
+                   Cavern (Cenote Chempita), snorkel & visit Punta Sur Park, this is a completely private tour.
+                    You won't have to share your vehicle or be flocked around like on the caravan tours, and get
+                     to discover Cozumel at your own pace. Also completely customizable. We have the #1 private
+                      tour guides, who speak fluent English and are featured in many of our 5 Star reviews. Our
+                       private guides are truly magnificent, and very knowledgeable about Cozumel Culture and 
+                       history because they are natives to Cozumel, who grew up living this unique and
+                        fascinating culture and know everything first hand. INCLUDES A COOLER OF WATER & BEER, 
+                        TRANSPORTATION FROM CRUISE PORT, RESORT/HOTEL & FERRY, PRIVATE GUIDE, ENTRANCES TO BELOW
+                         ATTRACTIONS, MEXICAN LUNCH & MUCH MORE!</p>
+            </section>
+            
+
+            <section id="tour6" class="tr">
+              <h3>Cozumel Submarine Experience</h3>
+              <img src="images/tour6.jpg" data-src="images/tour6.jpg" alt="">
+                <p>Submerge yourself in the crystal clear waters of the Caribbean in a state-of-the-art submarine
+                   on a submarine excursion from Cozumel. Dive to depths of 100 feet (30 meters) to discover the
+                    marine magnificence of the protected park, Chankanaab. Your journey upon the Atlantis 
+                    Submarine takes you to the heart of Cozumel’s most colorful and captivating coral reef; 
+                    marvel at troves of tropical fish as your knowledgeable guide provides insightful information
+                     on the fauna and flora.</p>
+            </section>
+
+            <section id="tour7" class="tr">
+              <h3>El Cielo Snorkel by Private Boat</h3>
+              <img src="images/tour7.jpg" data-src="images/tour7.jpg" alt="">
+                <p>Feel the breeze while cruising along Cozumel's coastline onboard a private boat. Enjoy the
+                   comfort of our vessels and experience an unforgettable underwater adventure! Snorkeling in 
+                   Cozumel is the favorite activity of the visitors to this Caribbean destination, as its 
+                   crystal-clear waters attract experts and newbies alike. Our experienced and professional 
+                   crew will gear you up and guide you in a two reefs stop trip. Admire lush marine life and 
+                   stunning coral formations only found at this true snorkeling paradise. Taste a delicious 
+                   fish ceviche and cold margaritas while you dip into the turquoise waters of Cozumel. Once 
+                   your snorkeling is over, relax at a pristine secluded beach away from the crowds! Don’t miss 
+                   out on this adventure and book it now!</p>
+            </section>
+
+            <section id="tour8" class="tr">
+              <h3>Custom Private Cozumel Jeep Tour</h3>
+              <img src="images/tour8.jpg" data-src="images/tour8.jpg" alt="">
+                <p>Explore Cozumel on an all-inclusive, half-day private Jeep tour. Design an itinerary that 
+                  suits your interests, then relax and let your driver-guide chauffeur you to all the area’s
+                   highlights. Visit Punta Sur Ecological Park, snorkel among tropical fish and colorful reefs, 
+                   wind your way through hidden caves, and even take an adventurous turn behind the wheel. 
+                   Enjoy lunch, drinks, and pickup and drop-off included in the tour price.</p>
+            </section>
+
+            <section id="tour9" class="tr">
+              <h3>Cozumel: Private VIP Tour by Van (up to 12 passengers)</h3>
+              <img src="images/tour9.jpg" data-src="images/tour9.jpg" alt="">
+                <p>Discover the best that the island of Cozumel has to offer on this half-day sightseeing tour. 
+                  With a private guide, create your own itinerary based on your group’s interests, or let your 
+                  guide take you to the island’s top attractions. Some points of interest include the municipal
+                   market, the downtown area, the eastern part of the island, and Chankanaab Beach Park.</p>
+            </section>
+
+            <section id="tour10" class="tr">
+              <h3>Invisible Boat Snorkeling Adventure in Cozumel</h3>
+              <img src="images/tour10.jpg" data-src="images/tour10.jpg" alt="">
+                <p>Admire the underwater wonderland of the Caribbean Sea without getting wet on an invisible boat
+                   tour. Unlike traditional glass-bottom boats, this vessel is entirely transparent, to enhance 
+                   you views of marine life—you'll also have the chance to swim and snorkel in the water, which 
+                   is home to a plethora of tropical fish. Plus, you can choose from several start times to suit
+                    your schedule</p>
+            </section>
+        </div>
+
+
+        <h2>Contact</h2>
+        <section class="contact">
+              <iframe 
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.17226695138!2d-87.03907015303547!3d20.4323277660439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sug!4v1712235920738!5m2!1sen!2sug" 
+                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                   referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
+                  <address>
+                    <ul>
+                      <li>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <a href="#">Phone: 999-999-999</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="#">Email: contact@cozumelscooters.com</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <a href="#">Adress: Playa del Carmen-Cozumel Ferry dock</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <a href="#">Adress: Terminal Puerta Maya</a>
+                      </li>
+                    </ul>
+                  </address>
+        </section>
+    </main>
+    <footer>
+      <p><i class="far fa-copyright"></i> SSEBUDE TITUS</p>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="rentals.html">Rentals</a>
+        </li>
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+        <li>
+          <a href="tours.html">Tours</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="wireframes.html">Wireframes</a>
+        </li>
+      </ul>
+      <p>Last Updated: <span id="updatedDate"></span></p>
+    </footer>
+
+
+    <script src="scripts/home.JS"></script>
+    <script src="scripts/lazy.js"></script>
+    <script src="scripts/buttom.js"></script>
+</body>
+</html>

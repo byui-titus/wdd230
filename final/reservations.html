@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    
+
+    <meta name="Author" content="SSEBUDE TITUS">
+    <meta name="description" content="WDD 230 - Web Frontend Development Final project">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/narmalise.css">
+
+
+
+</head>
+<body>
+    <div id="chamberBanner" class="banner">
+        <p></p>
+        
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook" class="sociallogo"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="LinkedIn" class="sociallogo"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
+    </div>
+
+    <header>     
+        <div class="headname">
+            <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
+         </div>
+
+         <nav>
+          <ul class="navigation">
+            <li>
+              <a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a>
+            </li>
+            <li>
+              <a href="index.html" >Home</a>
+            </li>
+            <li>
+              <a href="rentals.html">Rentals</a>
+            </li>
+            <li>
+              <a href="reservations.html">Reservations</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="date-hdr">
+            <p id="datetime"><span id="todayHeading"></span></p>
+        </div>
+    </header>
+
+    <main>
+      <section class="reservation">
+        <h2>Make a Reservation</h2>
+        <form action="confirmation.html">
+          <div class="info-rentals">
+            <h3>Rental agreement information</h3>
+            <ul class="list">
+              <li>A $50 security deposit is required to confirm reservations.</li>
+              <li>A valid drivers license is required in hand at time of rental.</li>
+              <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+              <li>Fuel charge not included.</li>
+              <li>Unlimited mileage.</li>
+              <li>Liability insurance is free of charge.</li>
+              <li>Reservations rate requires 24 hour prior notification.</li>
+              <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+              <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+              <li>Rentals may be returned to either location.</li>
+            </ul>
+            <input type="checkbox" name="agreement" id="agreement" required>
+            <label for="agreement">Check here to indicate that you have read and agree to agree</label>
+          </div>
+          <h3>Rental details</h3>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+          <label for="stormRegion">Rental type</label>
+          <select name="stormRegion" id="stormRegion">
+            <option selected="selected" disabled>Select a type ...</option>
+            <option value="preston">Honda Metro Scooter</option>
+            <option value="soda-springs">Honda Dio Scooter</option>
+            <option value="fish-haven">Honda PCX150 Scooter</option>
+            <option value="fish-haven">Honda Pioneer ATV</option>
+            <option value="fish-haven">Jeep Wrangler - 4 door with a/c</option>
+            <option value="fish-haven">Jeep Wrangler - 2 door </option>
+          </select>
+          <fieldset>
+            <legend>Select a Period</legend>
+            <div class="radio">
+              <input type="radio" id="halfDay" name="period" value="halfDay" class="radio">
+              <label for="halfDay">Half Day (3 hrs)</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="fullDay" name="period" value="fullDay" class="radio">
+              <label for="fullDay">Full Day</label>
+            </div>
+          </fieldset>
+          <label for="number">Number</label>
+          <input type="number" name="number" id="number">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+          <label for="state">State</label>
+          <input type="text" name="state" id="state">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country">
+          <label for="cruiseLine">Cruise Line</label>
+          <input type="text" name="cruiseLine" id="cruiseLine">
+          <label for="comments">Special accommodations/Comments</label>
+          <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+          <input type="submit" value="Make a Reservation">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><i class="far fa-copyright"></i> SSEBUDE TITUS</p>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="rentals.html">Rentals</a>
+        </li>
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+        <li>
+          <a href="tours.html">Tours</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="wireframes.html">Wireframes</a>
+        </li>
+      </ul>
+      <p>Last Updated: <span id="updatedDate"></span></p>
+    </footer>
+
+
+    <script src="scripts/home.JS"></script>
+    <script src="scripts/buttom.js"></script>
+</body>
+</html>
