@@ -6,3 +6,8 @@ hamButton.addEventListener('click', () => { navigation.classList.toggle('appear'
 //last update date
 let lastUpdated = document.lastModified;
 document.getElementById("updatedDate").textContent = lastUpdated;
+
+
+function closeBanner() {
+    document.getElementById("chamberBanner").style.display = "none";
+}

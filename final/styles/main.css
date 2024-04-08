@@ -43,7 +43,7 @@ header{
   .social{
     text-align: right;
     margin: auto;
-    margin-top: -80px;
+    
   }
   body{
     background: #EAE7DC; 
@@ -433,10 +433,12 @@ header{
     }
     .logo{
       margin-top: 10px;
+      margin-bottom: 10px;
     }
     
     .navigation {
       list-style: none;
+      
       padding: 10px;
       margin: auto;
       text-align: center;
@@ -446,13 +448,15 @@ header{
         margin: auto;
         text-align: center;
         list-style: none;
+        margin-bottom: 50px;
       }
     
       li {
         display: none;
     
         a {
-          display: block;
+          display: flex;
+          flex-direction: row;
           list-style: none;
           padding: 10px;
           text-align: center;
@@ -460,7 +464,7 @@ header{
           font-weight: 700;
           border-top: 1px solid rgba(0, 0, 0, .1);
           margin: auto;
-          background-color: #24D000;
+          background-color: #b3b6b2;
         }
       }
     

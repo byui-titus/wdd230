@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
 
