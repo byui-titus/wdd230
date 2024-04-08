@@ -25,8 +25,12 @@
 
 </head>
 <body>
-    <div id="chamberBanner" class="banner">
-        <p></p>
+    
+
+    <header>
+      <div id="chamberBanner" class="banner">
+        <p>Max-Temperature: <span id="tem"></span>°F</p>
+        <button id="closeBannerBtn" onclick="closeBanner()">❌</button>
         
     </div>
     <div class="social">
@@ -34,18 +38,19 @@
         <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
         <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="twitter" class="sociallogo"></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
-    </div>
-
-    <header>     
+    </div>     
         <div class="headname">
             <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
         </div>
+        <section class="heading">
+          <h1>SCOOTS Motor Scooter Rentals</h1>
+        </section>
 
 
         <nav>
           <ul class="navigation">
             <li>
-              <a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a>
+              <a href="#" id="hamBtn"><i class="fas fa-bars"></i> &#9776;</a>
             </li>
             <li>
               <a href="index.html" >Home</a>
@@ -309,7 +314,7 @@
         </section>
     </main>
     <footer>
-      <p><i class="far fa-copyright"></i> SSEBUDE TITUS</p>
+      <p><i class="far fa-copyright"></i> SSEBUDE TITUS-2024</p>
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -325,9 +330,6 @@
         </li>
         <li>
           <a href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a href="wireframes.html">Wireframes</a>
         </li>
       </ul>
       <p>Last Updated: <span id="updatedDate"></span></p>

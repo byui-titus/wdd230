@@ -25,47 +25,52 @@
 
 </head>
 <body>
+
+  <header>  
     <div id="chamberBanner" class="banner">
-        <p></p>
-        
-    </div>
-    <div class="social">
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook" class="sociallogo"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="LinkedIn" class="sociallogo"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
-    </div>
+      <p>Max-Temperature: <span id="tem"></span>°F</p>
+      <button id="closeBannerBtn" onclick="closeBanner()">❌</button>
+      
+  </div>
+  <div class="social">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook" class="sociallogo"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
+      <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="twitter" class="sociallogo"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
+  </div>   
+      <div class="headname">
+          <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
+      </div>
+      <section class="heading">
+        <h1>SCOOTS Motor Scooter Rentals</h1>
+      </section>
 
-    <header>     
-        <div class="headname">
-            <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
-         </div>
 
-         <nav>
-          <ul class="navigation">
-            <li>
-              <a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a>
-            </li>
-            <li>
-              <a href="index.html" >Home</a>
-            </li>
-            <li>
-              <a href="rentals.html">Rentals</a>
-            </li>
-            <li>
-              <a href="reservations.html">Reservations</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="#" id="hamBtn"><i class="fas fa-bars"></i> &#9776;</a>
+          </li>
+          <li>
+            <a href="index.html" >Home</a>
+          </li>
+          <li>
+            <a href="rentals.html">Rentals</a>
+          </li>
+          <li>
+            <a href="reservations.html">Reservations</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="date-hdr">
-            <p id="datetime"><span id="todayHeading"></span></p>
-        </div>
-    </header>
 
+      <div class="date-hdr">
+          <p id="datetime"><span id="todayHeading"></span></p>
+      </div>
+  </header>
     <main>
       <section class="reservation">
         <h2>Make a Reservation</h2>
@@ -150,9 +155,7 @@
         <li>
           <a href="contact.html">Contact</a>
         </li>
-        <li>
-          <a href="wireframes.html">Wireframes</a>
-        </li>
+        
       </ul>
       <p>Last Updated: <span id="updatedDate"></span></p>
     </footer>

@@ -20,6 +20,13 @@
   --nav-hover-background-color: #bc6c25;
 }
 
+header{
+  background-color: #EFE2BA;
+  
+}
+
+
+
 .home{
   text-align: center;
   margin: auto;
@@ -39,12 +46,21 @@
     margin-top: -80px;
   }
   body{
-    background-color: #7eb9ab;
+    background: #EAE7DC; 
    }
+
+   .banner button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
   .hero {
     max-width: 100%;
     position: relative;
+    margin-top: -50px;
+    margin-bottom: 25px;
   }
   
   .hero picture {
@@ -108,7 +124,7 @@
     padding:  50px;
     text-align: center;
     margin: auto;
-    margin-left: 500px;
+    margin-left: 700px;
     margin-top: -90px;
     margin-bottom: 50px;
   }
@@ -344,7 +360,7 @@
   
   .contact ul a {
     text-decoration: none;
-    color: #444a57;
+    color: var(--paragraph-background-color);
   }
   
   .contact ul .fa {
@@ -370,7 +386,7 @@
   
   footer {
     text-align: center;
-    background-color: rgba(46, 80, 119, 0.3);
+    background-color: #EFE2BA;
   }
   
   footer ul {
@@ -378,11 +394,12 @@
     list-style: none;
     line-height: 1.7;
     padding-left: 0;
-    
+    text-align: center;
+    margin: auto;
   }
   
   footer a {
-    color: #24D000;
+    color: var(--paragraph-background-color);
     -webkit-text-decoration-color: #2E5077;
             text-decoration-color: #2E5077;
     font-weight: bold;
@@ -407,6 +424,15 @@
     .home{
       text-align: center;
       margin: auto;
+    }
+
+    .headname{
+      text-align: center;
+      margin: auto;
+
+    }
+    .logo{
+      margin-top: 10px;
     }
     
     .navigation {

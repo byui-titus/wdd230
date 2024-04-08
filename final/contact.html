@@ -17,57 +17,86 @@
     <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-
+    <link rel="stylesheet" href="styles/narmalise.css">
 
 
 
 </head>
 <body>
+
+  <header>
     <div id="chamberBanner" class="banner">
-        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.! 🤝</p>
-        <button id="closeBannerBtn" onclick="closeBanner()">❌</button>
-    </div>
-    <div class="social">
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook" class="sociallogo"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="LinkedIn" class="sociallogo"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
-    </div>
+      <p>Max-Temperature: <span id="tem"></span>°F</p>
+      <button id="closeBannerBtn" onclick="closeBanner()">❌</button>
+      
+  </div>
+  <div class="social">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook" class="sociallogo"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" class="sociallogo"></a>
+      <a href="https://twitter.com/" target="_blank"><img src="images/xxx.avif" alt="twitter" class="sociallogo"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.jpg" alt="instagram" class="sociallogo"></a>
+  </div>
+    
+      <div class="headname">
+          <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
+      </div>
+      <section class="heading">
+        <h1>SCOOTS Motor Scooter Rentals</h1>
+      </section>
 
-    <header>     
-        <div class="headname">
-            <img class="logo" src="images/logo 2.jpg" alt="Nansana Municipality Chamber of Commerce">     
-         </div>
 
-         <div>
-            <button id="hamburgerBtn"><span class="hamburger">&#9776;</span><span class="hamburger">X</span></button>
-        </div>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="#" id="hamBtn"><i class="fas fa-bars"></i> &#9776;</a>
+          </li>
+          <li>
+            <a href="index.html" >Home</a>
+          </li>
+          <li>
+            <a href="rentals.html">Rentals</a>
+          </li>
+          <li>
+            <a href="reservations.html">Reservations</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
 
-        <nav>
-          <ul class="navigation">
-            <li>
-              <a href="#" id="hamBtn"><i class="fas fa-bars"></i> Menu</a>
-            </li>
-            <li>
-              <a href="index.html" >Home</a>
-            </li>
-            <li>
-              <a href="rentals.html">Rentals</a>
-            </li>
-            <li>
-              <a href="reservations.html">Reservations</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="date-hdr">
+          <p id="datetime"><span id="todayHeading"></span></p>
+      </div>
+  </header>
 
-          <div class="date-hdr">
-              <p id="datetime"><span id="todayHeading"></span></p>
-          </div>
-    </header>
+
+
+
+
+  <footer>
+    <p><i class="far fa-copyright"></i> SSEBUDE TITUS-2024</p>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="rentals.html">Rentals</a>
+      </li>
+      <li>
+        <a href="reservations.html">Reservations</a>
+      </li>
+      <li>
+        <a href="tours.html">Tours</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <p>Last Updated: <span id="updatedDate"></span></p>
+  </footer>
 
     <script src="scripts/buttom.js"></script>
