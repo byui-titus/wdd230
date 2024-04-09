@@ -442,32 +442,30 @@ header{
       padding: 10px;
       margin: auto;
       text-align: center;
-    
-      li:first-child {
-        display: block;
-        margin: auto;
-        text-align: center;
-        list-style: none;
-        margin-bottom: 50px;
-      }
-    
-      li {
-        display: none;
-    
-        a {
-          display: flex;
-          flex-direction: row;
-          list-style: none;
-          padding: 10px;
-          text-align: center;
-          text-decoration: none;
-          font-weight: 700;
-          border-top: 1px solid rgba(0, 0, 0, .1);
-          margin: auto;
-          background-color: #b3b6b2;
-        }
-      }
-    
+    }
+
+    .navigation li:first-child{
+      display: block;
+      margin: auto;
+      text-align: center;
+      list-style: none;
+      margin-bottom: 50px;
+    } 
+
+    .navigation li {
+      display: none;
+    }
+    .navigation  li a{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      margin: auto;
+      background-color: #b3b6b2;
     }
     
     .appear li {
