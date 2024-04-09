@@ -602,7 +602,7 @@ header{
     width: 60%;
     margin: 0 auto;
     margin-bottom: .5rem;
-    color: #24D000;
+    color: #0b0ffa;
     border: 1px solid #FFA630;
     font-weight: 700;
   }
@@ -640,8 +640,8 @@ header{
 }
 
 .reservation form input:last-child {
-  color: white;
-  background-color: #24D000;
+  color: rgb(0, 0, 0);
+  background-color: #bab6da;
 }
 
 
