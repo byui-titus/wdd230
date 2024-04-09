@@ -8,6 +8,7 @@ fetch(apiURL)
     document.getElementById('curr').innerText = jsObject.weather[0].description;
     document.getElementById('temp').innerText = jsObject.main.temp_max;
     document.getElementById('hum').innerText = jsObject.main.humidity;
+    document.getElementById('high-temp').innerText = jsObject.main.temp_max;
   });
 
 
