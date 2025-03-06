@@ -13,25 +13,32 @@ body {
 }
 
 header {
-    margin: auto;
+    margin:0 auto;
     max-width: 800px;
     background-color: #555479;
+    text-align: center;
   }
   header span{
     text-align: center;
     color: white;
     margin: auto;
   }
-
+img{
+    width: 150px;
+    height: 150px;
+}
   nav {
     margin-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
   }
   
-  nav li a {
+nav li a {
     display: flex;
     padding: 1rem;
     list-style: none;
     text-align: center;
+    
   }
   nav li{
     list-style: none;
