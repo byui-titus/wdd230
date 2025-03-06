@@ -11,31 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapics.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
 
     </header>
     <header id="header">
-        <img src="images/titus.jpg" alt="Titus" id="profile-picture"/>      
-        <h1>Ssebude Titus</h1>
+        <img src="images/images11.png" alt="Titus" id="profile-picture"/>      
+        <span>Ssebude Titus</span>
     </header>
     <nav> 
-        <ul class="navigation">
         <li><a href="index.html">Home</a></li>
         <li><a href="#">Site Plan</a></li>
-        <li><a href="#" target="_blank">Chamber</a></li>
+        <li><a href="#" >Chamber</a></li>
         <li><a href="">Form</a></li>
-       </ul> 
     </nav>
-
+    <h1>WDD 230: Web Frontend Development</h1>
+    
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-    </main>
-
-    <section id="cards">
-        <h3>Learning activities:</h3>
+    <section class="cards">
+        <h2>Learning activities</h2>
         <ul class="card-grid">
             <li>Week 01: <a href="week01/holygrail.html" target="_blank">Holy Grail</a>| <a
             href="https://codepen.io/Alan-S-nchez-the-flexboxer/pen/GRPMpVE" target="_blank">CodePen</a> | <a
@@ -48,7 +44,21 @@
         </ul>
     </section>
 
-    
+    <section class="cards">
+        <h2>Information</h2>
+        <div class="grid">
+        <p>Weather: </p>
+        <p>Number of Visits: </p>
+        </div>
+    </section> 
+    </main> 
+
+    <footer>
+        <p>&copy; <span id="year"></span> ssebude titus | kampala Uganda</p>
+    <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
 

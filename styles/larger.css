@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    header {
+        margin: auto;
+        max-width: 800px;
+        background-color: #555479;
+      }
+      header span{
+        text-align: center;
+        font-size: 1.8rem;
+        color: white;
+        margin: auto;
+      }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+    nav{
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
