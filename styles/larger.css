@@ -14,7 +14,7 @@
     main {
         grid-template-columns: 2fr 1fr;
     }
-    nav{
+    nav ul{
         display: flex;
         text-align: center;
         margin: 0 auto;

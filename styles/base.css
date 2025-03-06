@@ -38,9 +38,9 @@ nav li a {
     padding: 1rem;
     list-style: none;
     text-align: center;
-    
+
   }
-  nav li{
+  nav ul li{
     list-style: none;
     text-align: center;
     margin: 0 auto;
@@ -105,7 +105,7 @@ h2{
     margin-top: -3px;
 }
 .cards p{
-    pad: 1rem;
+    padding: 1rem;
     border: #333;
   box-sizing: border-box;
   margin-bottom: 10px;
