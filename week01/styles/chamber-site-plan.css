@@ -9,7 +9,7 @@
   --heading-font: "permenent marker";
   --paragraph-font: Roboto, Helvetica, sans-serif;
 
-  --headline-color-on-white: #4f345a;  /* headlines on a white background */ 
+  --headline-color-on-white: #4f345a;   
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
