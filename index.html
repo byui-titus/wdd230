@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ssebude Titus - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development">
-    <meta name="author" content="SSEBUDE TITUS">
-    <meta property="og:url" content="https://byui-titus.github.io/wdd230-0/">
-    <link rel="preconnect" href="https://fonts.googleapics.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapics.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
@@ -20,13 +22,18 @@
     <header id="header">
         <img src="images/titus.jpg" alt="Titus" id="profile-picture"/>      
         <span>Ssebude Titus</span>
+
+        <div id="mode">
+            <em>d-mode</em>✪
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#" >Chamber</a></li>
-            <li><a href="">Form</a></li>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html" class="active">Site Plan</a></li>
+            <li><a href="#"  class="active">Chamber</a></li>
+            <li><a href="" class="active">Form</a></li>
         </ul> 
     </nav>
     <h1>WDD 230: Web Frontend Development</h1>
@@ -38,7 +45,8 @@
             <li>Week 01: <a href="week01/holygrail.html" target="_blank">Holy Grail</a>| <a
             href="https://codepen.io/Alan-S-nchez-the-flexboxer/pen/GRPMpVE" target="_blank">CodePen</a> | <a
             href="week01/media-query.html" target="_blank">CSS Media query</a></li>
-            <li>Week 02: <a></a></li>
+            <li>Week 02: <a href="week02/bom.html" target="_blank">Scriptures</a>| <a href="week02/design.html"
+                target="_blank">design</a></li>
             <li>Week 03: <a></a></li>
             <li>Week 04: <a></a></li>
             <li>Week 05: <a></a></li>

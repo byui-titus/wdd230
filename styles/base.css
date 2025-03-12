@@ -12,6 +12,29 @@ body {
     margin: 0 auto;
 }
 
+#mode {
+	position: absolute;
+	top: 4rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+#menu {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
+
+
 header {
     margin:0 auto;
     max-width: 800px;
@@ -85,8 +108,8 @@ h2{
     list-style: none;
     padding: 1rem;
     font-size: 1rem;
-    background-color:#e3d9d9;
-    color: #fff;
+    background-color:#eee7e7;
+    color: #b32b2b;
     margin: auto;
     border-radius: 10px;
     border-style: none;
@@ -98,7 +121,7 @@ h2{
     padding: 1rem;
     font-size: 1rem;
     background-color:#e3d9d9;
-    color: #fff;
+    color: #b32b2b;
     margin: auto;
     border-radius: 10px;
     border-style: none;
@@ -120,4 +143,27 @@ footer {
     padding: 1rem;
     background-color: #0077cc;
     color: white;
+}
+
+
+@media only screen and (max-width: 600px){
+
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.open::before {
+    content: "❌";
+  }
+  .navigation {
+    display: none; 
+    flex-direction: row;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    background-color: rgb(172, 130, 211) ;
+    padding: 10px;
+    color: #e76f51;
+  }
 }
