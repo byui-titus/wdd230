@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		(mainMenu.style.display === 'none' || mainMenu.style.display === 'block') ? 
 		'' : 'block';
 	});
-	hamburger.addEventListener('click', () => {
+	hamburgerBtn.addEventListener('click', () => {
 		menu.classList.toggle('show');
-		hamburger.innerHTML = menu.classList.contains('show') ? 'X' : '&#9776;';
+		hamburgerBtn.innerHTML = menu.classList.contains('show') ? 'X' : '&#9776;';
 	});
   });
 

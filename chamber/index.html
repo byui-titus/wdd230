@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAMBER OF COMMERCE</title>
+
+    <meta name="description" content="Media query learning activity example page">
+    <meta name="author" content="SSEBUDE TITUS">
+    <link rel="preconnect" href="https://fonts.googleapics.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapics.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.CSS">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+
+</head>
+<body>
+
+    <header id="header">
+        <img src="images/Untitled.jpg" alt="logo" id="logo-image">
+
+        <h1>Nyendo chamber of commerce</h1>
+        <nav> 
+            <button id="menu"></button>
+            <ul class="navigation">    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" target="_blank">Directory</a></li>
+            <li><a href="join.html" target="_blank">Join</a></li>           
+            </ul>        
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <img src="images/home.png" alt="hero">
+
+                <div class="herolabel">
+                    <a href="join.html">Join Us</a>
+                </div>
+                <h1 class="hero-mag">WELCOME TO NYENDO CHAMBER OF COMMERCE</h1>
+        </div>
+
+        <div class="cards">
+            <section id="events">
+                <h2>Upcoming event</h2>
+            <h4>Event title: Annual meetings </h4>
+            <P>Date and Time:10/May, 2025 12:00PM </P>
+            <p>Location: Freedom City meeting hall</p>
+            <p>Join us for the annual meeting where we get to 
+                duscuss the workings of the organistaion and plan for the year.</p>
+            </section>
+
+            <section id="wather-card">
+                <h2> Weather Infromation</h2>
+                
+                <h4>Wakiso, Uganda</h4>
+                <div class="weather">
+                    <h4><span id="current-temp"></span> </h4>
+                    <figure>
+                        <img id="weather-icon" alt="weather icon">
+                        <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+                    </figure>  
+                    
+                    <h4>Temperature, Windspeed and Windchiil</h4>
+                   <P>Temperature: <span id="temperature">50</span>°F</P>
+                   <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+                   <p>Wind Chill: <span id="windchill">N/A</span>°F</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="spot">
+            <section id="spotlight1" class="sportlight">
+                <img src="images/airtel.jpg" alt="airtel log">
+                <h2>Airtel Uganda</h2>
+                <p>Telecom company</p>
+                <p>Member sisnce: 2015</p>
+                <h4>Silver membership</h4>
+                <a href="https://airtel.africa/" target="_blank">https://airtel.africa/</a>
+            </section>
+            <section id="spotliht2" class="sportlight">
+                <img src="images/ecobank.png" alt="ecobank">
+                <h2>Eco bank Uganda</h2>
+                <p>Finance Instution</p>
+                <p>Member sisnce: 2020</p>
+                <h4>Bronze membership</h4>
+                <a href="https://www.ecobank.com/ug/personal-banking/countries" target="_blank">https://www.ecobank.com/ug</a>
+            </section>
+            <section id="spotlight3" class="sportlight">
+                <img src="images/sozo.jpg"  alt="sozo">
+                <h2>Sozo property consultant Ltd</h2>
+                <p>household</p>
+                <p>Member sisnce: 2019</p>
+                <h4>Golod membership</h4>       
+            </section>
+        </div>    
+    </main>
+    <hr>
+
+    <footer>
+        <div id="contact">
+            <img id="footer-img" src="images/Untitled.jpg" alt="wakiso logo">
+            <section>
+                <h2>Nyendo Chamber of commerce</h2>
+                <h4>Mabirizi plaza Room FF24 Wiliam street</h4> 
+                <h4>contact@wkchamber.org</h4>     
+                <h4>+(256) 770844431</h4>   
+            </section>     
+        </div>        
+        <p>&copy; <span id="yearDate"></span> | Nyendo Chamer Of Commerce | Kampala, Uganda | lastModified; </p>      
+        <div id="lastModified"></div>
+    </footer>
+    <script src="scripts/base.js"></script>
+</body>
+</html>
