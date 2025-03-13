@@ -45,7 +45,7 @@ header h1{
 .herolabel {
     position: absolute;
     top: 350px;
-    left: 70px;
+    left: 200px;
     background: radial-gradient(#fff, #4D5B97);
     border: 1px solid rgba(0,0,0,.75);
     padding: 1.5rem;
@@ -113,7 +113,7 @@ footer{
     }
     header h1{
         font-family: Georgia, 'Times New Roman', Times, serif; 
-        margin-right: auto;
+        margin-right: 0 auto;
         font-size: 2rem;
         color: rgb(255, 255, 255);
         margin-left: 200px;
