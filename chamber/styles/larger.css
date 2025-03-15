@@ -1,0 +1,68 @@
+@media (min-width: 768px){
+    #events{
+        background-color: whitesmoke;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        margin-top: -10px;
+        border-radius: 5px;
+    }
+    #events h2{
+        color: #d71fdd;
+    }
+
+    #wather-card{
+        background-color: whitesmoke;
+        max-width: 800px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;  
+    }
+    #wather-card  h4{
+        max-width: 800px;
+        font-family: 'Merriweather', serif;
+        color:#d71fdd; 
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #spotlight1{
+        border: #21374f;
+        box-sizing: border-box;
+        background-color: #ca9696;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    #spotliht2{
+        border: #21374f;
+        box-sizing: border-box;
+        background-color: #ca9696;
+        border-radius: 50px;
+        padding: 30px;
+        width: 300px;
+
+    }
+    #spotliht2 img{
+        width: 250px;
+    }
+    
+    #spotlight3{
+        margin: auto;
+        border: #21374f;
+        box-sizing: border-box;
+        background-color: #ca9696;
+        border-radius: 50px;
+        padding: 30px;
+    }
+
+    .spot{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:5px;
+        width: 50px;
+    }
+}

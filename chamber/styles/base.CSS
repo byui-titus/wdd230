@@ -9,12 +9,13 @@
 }
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
     background: linear-gradient(0deg,#aea4e3 0%, 
     #d3ffe8 50%,#b172d3 100%);
+    max-width: 1000px;
 }
 
 header {
