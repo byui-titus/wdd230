@@ -39,28 +39,57 @@
     <h1>WDD 230: Web Frontend Development</h1>
     
     <main>
-    <section class="cards">
-        <h2>Learning activities</h2>
-        <ul class="card-grid">
-            <li>Week 01: <a href="week01/holygrail.html" target="_blank">Holy Grail</a>| <a
-            href="https://codepen.io/Alan-S-nchez-the-flexboxer/pen/GRPMpVE" target="_blank">CodePen</a> | <a
-            href="week01/media-query.html" target="_blank">CSS Media query</a></li>
-            <li>Week 02: <a href="week02/bom.html" target="_blank">Scriptures</a>| <a href="week02/design.html"
-                target="_blank">design</a></li>
-            <li>Week 03: <a></a></li>
-            <li>Week 04: <a></a></li>
-            <li>Week 05: <a></a></li>
-            <li>Week 06: <a></a></li>
-        </ul>
-    </section>
-
-    <section class="cards">
-        <h2>Information</h2>
-        <div class="grid">
-        <p>Weather: </p>
-        <p>Number of Visits: </p>
+        <div class="hero">
+            <picture>
+                <!-- Image for mobile view (up to 400px width) -->
+                <source media="(min-width: 500px)" srcset="images/bogota_colombia_temple_lds.webp"> 
+                <source media=" (min-width:1000px )" srcset="images/bogota_colombia_temple_lds.webp">
+                <img src="images/bogota_colombia_temple_lds.webp" alt="Latter-day Temple">
+            </picture>
+            <div class="herolabel">
+                <p>Bogotá Colombia Temple</p>
+            </div>
         </div>
-    </section> 
+
+
+        <div class="home">
+            <section class="cards">
+                <h2>Learning activities</h2>
+                <ul class="card-grid">
+                    <li>Week 01: <a href="week01/holygrail.html" target="_blank">Holy Grail</a>| <a
+                    href="https://codepen.io/Alan-S-nchez-the-flexboxer/pen/GRPMpVE" target="_blank">CodePen</a> | <a
+                    href="week01/media-query.html" target="_blank">CSS Media query</a></li>
+                    <li>Week 02: <a href="week02/bom.html" target="_blank">Scriptures</a>| <a href="week02/design.html"
+                        target="_blank">design</a></li>
+                    <li>Week 03: <a></a></li>
+                    <li>Week 04: <a></a></li>
+                    <li>Week 05: <a></a></li>
+                    <li>Week 06: <a></a></li>
+                </ul>
+            </section>
+
+            <section class="cards">
+                <h2>Information</h2>
+                <div class="grid">
+                    <div class="weather">
+                        <h4><span id="current-temp"></span> </h4>
+                        <figure>
+                            <img id="weather-icon" alt="weather icon">
+                            <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+                        </figure> 
+
+                    </div>
+                <h4><span class="label">Number of Visits: </span><span class="visits"></span></h4>
+                </div>
+            </section> 
+        </div>
+
+    <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.27871739205!2d32.51672264912981!3d0.3132006961461963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d74b39b%3A0x4538903dd96b6fec!2sKampala!5e0!3m2!1sen!2sug!4v1705925995052!5m2!1sen!2sug" 
+          width="600" height="450" style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+    </div>   
     </main> 
 
     <footer>
