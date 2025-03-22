@@ -66,4 +66,15 @@
         grid-gap:5px;
         width: 50px;
     }
+
+    /** discover styless**/
+.discover{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    margin: auto;
+    grid-gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+}
 }

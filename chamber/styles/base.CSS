@@ -238,3 +238,33 @@ footer{
         margin-top: 10px;
     }
 }
+
+
+
+.monitory h2{
+    border: 1px solid balck;
+    margin: auto;
+    box-shadow: 1px 1px 3px 1px #333;
+}
+.pictures img{
+    border: 1px solid balck;
+    margin: auto;
+    box-shadow: 1px 1px 3px 1px #333;
+    width: 50%;
+}
+.pictures :hover{
+    background-color: #decdcd;
+    color: #271f1f;
+    font-weight: 700;
+}
+
+.pictures figcaption {
+    background-color: #FFECD1;
+    border: thin silver solid;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+   }
+.lastVisitP{
+    color: #b68d55;
+}
