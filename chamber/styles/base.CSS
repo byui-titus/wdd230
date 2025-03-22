@@ -242,12 +242,12 @@ footer{
 
 
 .monitory h2{
-    border: 1px solid balck;
+    border: 1px ;
     margin: auto;
     box-shadow: 1px 1px 3px 1px #333;
 }
 .pictures img{
-    border: 1px solid balck;
+    border: 1px ;
     margin: auto;
     box-shadow: 1px 1px 3px 1px #333;
     width: 50%;
