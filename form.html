@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    
+    <header>
+
+    </header>
+    <header id="header">
+        <img src="images/titus.jpg" alt="Titus" id="profile-picture"/>      
+        <span>Ssebude Titus</span>
+
+        <div id="mode">
+            <em>d-mode</em>✪
+        </div>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html" class="active">Site Plan</a></li>
+            <li><a href="chamber/index.html"  class="active">Chamber</a></li>
+            <li><a href="" class="active">Form</a></li>
+        </ul> 
+    </nav>
+
+    <main>
+        <form action="record.html" method="get">
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Password must be at least 8 characters long and alphanumeric" required>
+            </div>
+            <div>
+              <label for="confirm_password">Confirm Password:</label>
+              <input type="password" id="confirm_password" name="confirm_password" required oninput="checkPassword(this)">
+              <span id="password_error" style="display: none; color: red;">Passwords do not match. Please try again.</span>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+            </div>
+            <div>
+              <label for="page_rating">Page Rating:</label>
+              <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" onchange="document.getElementById('rating_display').textContent = this.value;">
+              <span id="rating_display">1</span>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> ssebude titus | kampala Uganda</p>
+    <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
