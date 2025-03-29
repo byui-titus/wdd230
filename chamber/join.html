@@ -1,0 +1,97 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAMBER OF COMMERCE</title>
+
+    <meta name="description" content="Media query learning activity example page">
+    <meta name="author" content="SSEBUDE TITUS">
+    <link rel="preconnect" href="https://fonts.googleapics.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapics.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.CSS">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+
+
+
+
+</head>
+<body>
+
+    <header id="header">
+        <img src="images/Untitled.jpg" alt="logo" id="logo-image">
+
+        <h1>Nyendo chamber of commerce</h1>
+        <nav> 
+            <button id="menu"></button>
+            <ul class="navigation">    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" target="_blank">Directory</a></li>
+            <li><a href="join.html" target="_blank">Join</a></li>           
+            </ul>        
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <div class="lastVisit">
+            <p class="lastVisitP"></p>
+        </div>
+        <h2>Join wakiso Chamber of Commerce</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership and your business</legend>
+                <div class="membership">
+                    <h3>Select a Membership level</h3>
+                    <p>Click one to see info...</p> 
+                    <label class="sbs"><input type="radio" name="membership" value="np" onclick="showMembershipInfo('np')"> NP Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze" onclick="showMembershipInfo('bronze')"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold" onclick="showMembershipInfo('gold')"> Gold Membership</label>
+                </div>
+                <div class="membership-info">
+                </div>
+                <label class="top">Business Name*<input type="text" name="bussname" required></label>
+                <label class="top">Business Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
+                <label class="top">Briefly describe your business<textarea name="description" cols="30" rows="7"></textarea></label>
+                <input type="hidden" id="hiddenDate" name="hiddenDate">
+            </fieldset>
+            <input type="submit" value="Join the Chamber" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
+        </form>
+    </main>
+    
+    <footer>
+        <div id="contact">
+            <img id="footer-img" src="images/Untitled.jpg" alt="wakiso logo">
+            <section>
+                <h2>Nyendo Chamber of commerce</h2>
+                <h4>Mabirizi plaza Room FF24 Wiliam street</h4> 
+                <h4>contact@wkchamber.org</h4>     
+                <h4>+(256) 770844431</h4>   
+            </section>     
+        </div>        
+        <p>&copy<span id="yearDate" ></span> | Nyendo Chamer Of Commerce | Kampala, Uganda | lastModified; </p>      
+        <div id="lastModified"></div>
+    </footer>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/join.js"></script>
+    </body>
+</html>
