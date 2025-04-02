@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAMBER OF COMMERCE</title>
+
+    <meta name="description" content="Media query learning activity example page">
+    <meta name="author" content="SSEBUDE TITUS">
+    <link rel="preconnect" href="https://fonts.googleapics.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapics.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Kampala" >
+    <meta property="og:type" content="image" >
+    <meta property="og:url" content="https://byui-titus.github.io/wdd230/">
+    <meta property="og:image" content="https://maps.app.goo.gl/iMK9DfXsU4WK3idU6">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.CSS">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header id="header">
+        <img src="images/Untitled.jpg" alt="logo" id="logo-image">
+
+        <h1>Nyendo chamber of commerce</h1>
+        <nav> 
+            <button id="menu"></button>
+            <ul class="navigation">    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" target="_blank">Directory</a></li>
+            <li><a href="join.html" target="_blank">Join</a></li>           
+            </ul>        
+        </nav>
+    </header>
+    
+    <main class="directory">
+
+
+        <div class="content-container">
+            <h1>Directory</h1>
+            <div class="directory-buttons">
+              <button id="panel" value="Panel View">GRID<br>View</button>
+              <button id="list" value="List View" autofocus>LIST<br>View</button>
+            </div>
+            <div class="directory-grid"></div>
+          </div>
+
+
+    </main>
+
+    <footer>
+        <div id="contact">
+            <img id="footer-img" src="images/Untitled.jpg" alt="wakiso logo">
+            <section>
+                <h2>Nyendo Chamber of commerce</h2>
+                <h4>Mabirizi plaza Room FF24 Wiliam street</h4> 
+                <h4>contact@wkchamber.org</h4>     
+                <h4>+(256) 770844431</h4>   
+            </section>     
+        </div>        
+        <p>&copy<span id="yearDate" ></span> | Nyendo Chamer Of Commerce | Kampala, Uganda | lastModified; </p>      
+        <div id="lastModified"></div>
+    </footer>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

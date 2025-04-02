@@ -94,4 +94,43 @@
     font-size: .9rem;
 }
 
+.directory-grid img {
+    padding: 0px;
+    display: block;
+    margin: 5px auto;
+    width: 50px;
+    box-shadow: 5px 5px 10px #000000;
+    border-radius: 5px;
+  }
+
+  .panelview {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .panelview img {
+    padding: 0px;
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    box-shadow: 5px 5px 10px #000000;
+    border-radius: 5px;
+  }
+
+  .contact-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .board {
+    grid-column: 1/4;
+    width: 100%;
+  }
+
+  div.board {
+    flex-direction: row;
+  }
+
+  div.board figure picture img{
+    height: 400px;
+    width: 300px;
+  }
+
 }
