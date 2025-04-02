@@ -18,7 +18,7 @@
         "links": [
           {
             "url": "week02/design.html",
-            "title": "Some Activity"
+            "title": "Design Activity"
           }
         ]
       },
@@ -44,8 +44,8 @@
         "week": "Week 5",
         "links": [
           {
-            "url": "week05/finalproject.html",
-            "title": "Final Project"
+            "url": "week05/prophets.html",
+            "title": "prophets"
           }
         ]
       }
